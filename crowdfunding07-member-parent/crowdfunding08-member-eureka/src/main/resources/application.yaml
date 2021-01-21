@@ -1,0 +1,15 @@
+server: 
+  port: 1000
+
+spring:
+  application:
+    name: crowd-eureka
+
+eureka: 
+  instance: 
+    hostname: localhost           # 配置当前Eureka服务的主机地址
+  client: 
+    registerWithEureka: false     # 自己就是注册中心，所以自己不注册自己 
+    fetch-registry: false         # 自己就是注册中心，所以不需要“从注册中心取回信息” 
+    serviceUrl:                   # 客户端访问 Eureka 时使用的地址 
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka

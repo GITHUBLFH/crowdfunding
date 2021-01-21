@@ -1,0 +1,12 @@
+{"properties": [
+  {
+    "name": "mybatis.logging.level.com.liufuhao.crowd.mapper",
+    "type": "java.lang.String",
+    "description": "A description for 'mybatis.logging.level.com.liufuhao.crowd.mapper'"
+  },
+  {
+    "name": "mybatis.logging.level.com.liufuhao.crowd.test",
+    "type": "java.lang.String",
+    "description": "A description for 'mybatis.logging.level.com.liufuhao.crowd.test'"
+  }
+]}

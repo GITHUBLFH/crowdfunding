@@ -1,0 +1,17 @@
+server:
+  port: 4000
+spring:
+  application:
+    name: crowd-auth  thymeleaf:    prefix: classpath:/templates/
+    suffix: .html
+  redis:    host: 192.168.100.130
+    port: 6379
+    password: redis
+  session:    store-type: rediseureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1000/eureka
+
+#ribbon:
+#  ReadTimeout: 10000
+#  ConnecTimeout: 10000
